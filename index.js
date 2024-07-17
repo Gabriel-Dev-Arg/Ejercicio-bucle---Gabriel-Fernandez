@@ -1,4 +1,6 @@
 
+/* ejercicio 1 */
+
 /* let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"))
 
 
@@ -16,7 +18,7 @@ if (numero == 0 ) {
 }
  */
 
-
+/* ejercicio 2 */
 
 /* let suma = 0
 let numero
@@ -41,32 +43,29 @@ console.log("Suma total: " + suma);
 console.log("Programa terminado."); */
 
 
+/* ejercicio 3 */
 
-
-let numeroSecreto = Math.floor(Math.random() * 100) + 1
+/* let numeroSecreto = 100
 
 let intentos = 0;
 let numeroUsuario;
 
 do {
-    // Solicitar al usuario que ingrese un número
-    numeroUsuario = prompt("Adivina el número secreto (entre 1 y 100):")
-    // Convertir la entrada a número
-    numeroUsuario = Number(numeroUsuario)
     
-    // Verificar si el número es válido
+    numeroUsuario = prompt("Adivina el número secreto (entre 1 y 100):")
+
     if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 100) {
-        console.log("Por favor, ingrese un número válido entre 1 y 100.")
+        alert("Por favor, ingrese un número válido entre 1 y 100.")
     } else {
-        intentos++;
+        intentos++
         
         if (numeroUsuario < numeroSecreto) {
-            console.log("El número secreto es mayor. Intenta de nuevo.")
+            alert("El número secreto es menor. Intenta de nuevo.")
         } else if (numeroUsuario > numeroSecreto) {
-            console.log("El número secreto es menor. Intenta de nuevo.")
+            alert("El número secreto es mayor. Intenta de nuevo.")
         } else {
-            console.log("¡Felicitaciones! ¡Has adivinado el número secreto!")
-            console.log("Lo has logrado en " + intentos + " intentos.")
+            alert("¡Felicitaciones! ¡Has adivinado el número secreto!")
+            alert("Lo has logrado en " + intentos + " intentos.")
         }
     }
-} while (numeroUsuario !== numeroSecreto);
+} while (numeroUsuario !== numeroSecreto)   */
