@@ -270,6 +270,8 @@ function numeroMasGrande(numeros) {
 numeroMasGrande(numeros) */
 
 
+/* ejercicio 12 */
+
 /* let numeros = [10,20,30,40,50,60,70,80,90,100]
 
 function numeroMasChico(numeros){
@@ -288,7 +290,7 @@ function numeroMasChico(numeros){
 }
 numeroMasChico(numeros) */
 
-/* Ejercicio 12 */
+/* Ejercicio 13 */
 
 /* function jugarPiedraPapelTijeras() {
     const jugador1 = prompt("Ingrese el nombre del primer jugador:");
@@ -324,7 +326,7 @@ numeroMasChico(numeros) */
 
 jugarPiedraPapelTijeras(); */
 
-/* ejercicio 13 */
+/* ejercicio 14 */
 /* function imprimirTriangulo(lado) {
     for (let i = 1; i <= lado; i++) {
         let linea = ''
@@ -339,7 +341,7 @@ jugarPiedraPapelTijeras(); */
 imprimirTriangulo(5); */
 
 
-/* ejercicio 14 */
+/* ejercicio 15 */
 /* function imprimirTrianguloInvertido(lado) {
     for (let i = lado; i >= 1; i--) {
         let linea = ''
