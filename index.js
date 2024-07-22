@@ -216,3 +216,167 @@ function numerosImpar (array)
 }
 
 numerosImpar(MostrarNumImpar) */
+
+/* ejercicio 10 */
+
+/* function calcularSumas() {
+    let sumaPares = 0
+    let sumaImpares = 0
+    
+    while (true) {
+        let numero = parseInt(prompt("Ingrese un numero (0 para terminar):"))
+        if (isNaN(numero)) {
+            console.log("Por favor, ingrese un numero valido.")
+            continue
+        }
+
+        if (numero === 0) {
+            break
+        }
+
+        if (numero % 2 === 0) {
+            sumaPares += numero
+        } else {
+            sumaImpares += numero
+        }
+    }
+
+    console.log("Suma de numeros pares: " + sumaPares);
+    console.log("Suma de numeros impares: " + sumaImpares)
+}
+
+
+calcularSumas(); */
+
+
+/* ejercicio 11 */
+
+/* let numeros = [10,20,30,40,50,60,70,80,90,100]
+
+function numeroMasGrande(numeros) {
+    if(numeros.length === 0){
+        console.log("El array esta vacio")
+        return
+    }
+    let mayor = numeros[0]
+
+    for (const numero of numeros) {
+        if (numero > mayor) {
+            mayor = numero
+        }
+    }
+    console.log("El numero mas grande es: " + mayor)
+}
+numeroMasGrande(numeros) */
+
+
+/* let numeros = [10,20,30,40,50,60,70,80,90,100]
+
+function numeroMasChico(numeros){
+    if(numeros.length === 0){
+        console.log("El array esta vacio");
+        return
+    }
+    let menor = numeros [0]
+
+    for (const numero of numeros) {
+        if(numero < menor){
+            menor = numero
+        }
+    }
+    console.log("El numero mas chico es: " +menor)
+}
+numeroMasChico(numeros) */
+
+/* Ejercicio 12 */
+
+/* function jugarPiedraPapelTijeras() {
+    const jugador1 = prompt("Ingrese el nombre del primer jugador:");
+    const jugador2 = prompt("Ingrese el nombre del segundo jugador:");
+
+    let ganador = null;
+
+    while (!ganador) {
+        
+        const jugada1 = prompt(`${jugador1}, elige piedra, papel o tijeras:`).toLowerCase();
+        const jugada2 = prompt(`${jugador2}, elige piedra, papel o tijeras:`).toLowerCase();
+
+        if (!['piedra', 'papel', 'tijeras'].includes(jugada1) || !['piedra', 'papel', 'tijeras'].includes(jugada2)) {
+            console.log("Jugada inválida. Por favor, elijan entre piedra, papel o tijeras.");
+            continue;
+        }
+
+        if (jugada1 === jugada2) {
+            console.log("Empate. Jugamos de nuevo.");
+        } else if (
+            (jugada1 === 'piedra' && jugada2 === 'tijeras') ||
+            (jugada1 === 'papel' && jugada2 === 'piedra') ||
+            (jugada1 === 'tijeras' && jugada2 === 'papel')
+        ) {
+            ganador = jugador1;
+        } else {
+            ganador = jugador2;
+        }
+    }
+
+    console.log(`¡${ganador} ha ganado el juego!`);
+}
+
+jugarPiedraPapelTijeras(); */
+
+/* ejercicio 13 */
+/* function imprimirTriangulo(lado) {
+    for (let i = 1; i <= lado; i++) {
+        let linea = ''
+        for (let j = 1; j <= i; j++) {
+            linea += '*'
+        }
+        console.log(linea)
+    }
+}
+
+
+imprimirTriangulo(5); */
+
+
+/* ejercicio 14 */
+/* function imprimirTrianguloInvertido(lado) {
+    for (let i = lado; i >= 1; i--) {
+        let linea = ''
+        for (let j = 1; j <= i; j++) {
+            linea += '*'
+        }
+        console.log(linea)
+    }
+}
+
+
+imprimirTrianguloInvertido(5); */
+
+
+/* ejercicio 16 */
+/* function ordenarArray(arr) {
+    const n = arr.length
+    
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+
+                let temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+    
+    return arr
+}
+
+
+const numeros = [64, 34, 25, 12, 22, 11, 90, 88, 45, 73];
+
+console.log("Array original:", numeros)
+
+const arrayOrdenado = ordenarArray(numeros)
+
+console.log("Array ordenado:", arrayOrdenado) */
